@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chrome Dino Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🦖 Chrome Dino Game</h1>
+  <div class="game-container">
+    <img id="dino" src="dino.jpg" alt="Dino">
+    <img id="obstacle" src="cactus.jpg" alt="Cactus">
+  </div>
+
+  <div class="info">
+    <p>🏆 Score: <span id="score">0</span></p>
+    <p>🥇 High Score: <span id="highScore">0</span></p>
+    <button onclick="restartGame()">🔄 Restart</button>
+    <button onclick="viewPastRecords()">📜 View Past Records</button>
+  </div>
+
+  <div id="records" class="records">
+    <h2>📜 Past Records</h2>
+    <ul id="recordsList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
